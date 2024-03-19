@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+
+.off-canvas-wrapper .off-canvas .off-canvas-content:not(.off-canvas-no-close)::after {
+    z-index: 0;
+}
+
+::placeholder{
+  font-size: 14px;
+  padding-left: 5px;
+}
