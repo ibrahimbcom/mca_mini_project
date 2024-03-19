@@ -40,8 +40,8 @@
         $contact = $_POST['contact'];
         $address = $_POST['address'];
 
-        $upd_qry = "UPDATE users SET `name` = '$name' WHERE id = $teacher_user_id AND `role` = 2";
-        $update = update($conn,$upd_qry);
+        $upd_query = "UPDATE users SET `name` = '$name' WHERE id = $teacher_user_id AND `role` = 2";
+        $update = update($conn,$upd_query);
         
         $teacher_upd_qry = "UPDATE teachers SET `teacher_name` = '$name',`gender` = '$gender',`contact_no` = '$contact',`address` = '$address' WHERE user_id = $teacher_user_id";
 
